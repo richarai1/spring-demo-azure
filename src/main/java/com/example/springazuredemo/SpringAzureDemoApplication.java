@@ -12,7 +12,14 @@ public class SpringAzureDemoApplication {
     public String  onMessage(){
         return "Heyyy";
     }
-
+    @GetMapping("/hello")
+    public String  onMessage1(){
+        return "Test";
+    }
+    @GetMapping("/test")
+    public String  onMessage2(){
+        return "Test";
+    }
     public static void main(String[] args) {
         SpringApplication.run(SpringAzureDemoApplication.class, args);
     }
